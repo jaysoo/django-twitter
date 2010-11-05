@@ -36,7 +36,7 @@ oauth_client = oauth.Client(oauth_consumer)
 
 def get_request_token():
     current_site = Site.objects.get_current()
-    callback_url = 'http://%s%s' % (current_site.domain, reverse('tweet-access-token'))
+    callback_url = 'http://%s%s' % (current_site.domain, reverse('twitter-access-token'))
     resp, content = oauth_client.request(REQUEST_TOKEN_URL, 'POST', 'oauth_callback=%s' % callback_url)
     if resp['status'] == '200':
         return dict(parse_qsl(content))

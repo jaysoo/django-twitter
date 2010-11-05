@@ -6,7 +6,7 @@
   (function($) {
     $(function() {
       $('#twitter-authorize').bind('click', function() {
-        window.open('{% url tweet-authorize %}', 'twitter_authorize',
+        window.open('{% url twitter-authorize %}', 'twitter_authorize',
           'scrollbars=1,width=800,height=500')
       })
     })
