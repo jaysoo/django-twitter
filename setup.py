@@ -1,5 +1,5 @@
 __author__ = 'jack.hsu@gmail.com'
-__version__ = '0.2-devel'
+__version__ = '0.2'
 
 METADATA = dict(
     name = 'django-twitter',
