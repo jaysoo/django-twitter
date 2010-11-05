@@ -26,7 +26,7 @@ You also need to add django_twitter to project.
 
     INSTALLED_APPS = (
         ...
-        'django_tweet',
+        'django_twitter',
     )
 
 And don't forget to syncdb! ;)
