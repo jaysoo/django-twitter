@@ -3,6 +3,11 @@ django-twitter
 
 Simple application that provides a way to easily add Twitter accounts through Django admin.
 
+Dependency
+----------
+
+This Django app users the [python-twitter](http://code.google.com/p/python-twitter/) library.
+
 
 Register Twitter app
 --------------------
