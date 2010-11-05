@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+  <body>
+    <script>
+      window.opener.document.getElementById('id_username').value = '{{ screen_name }}'
+      window.opener.document.getElementById('id_access_token_key').value = '{{ oauth_token }}'
+      window.opener.document.getElementById('id_access_token_secret').value = '{{ oauth_token_secret  }}'
+      window.close()
+    </script>
+  </body>
+</html>
