@@ -2,20 +2,20 @@ __author__ = 'jack.hsu@gmail.com'
 __version__ = '0.2-devel'
 
 METADATA = dict(
-    name = 'django-tweet',
+    name = 'django-twitter',
     version = __version__,
-    url = 'http://github.com/jaysoo/django-tweet',
-    description ='Manages twitter accounts a for Django project',
+    url = 'http://github.com/jaysoo/django-twitter',
+    description ='Manages Twitter accounts a for Django project',
     author = 'Jack Hsu',
     author_email = 'jack.hsu@gmail.com',
-    packages = ['django_tweet'],
-    package_data = {'': ['templates/django_tweet/*.html','templates/admin/django_tweet/twitteraccount/*.html']},
+    packages = ['django_twitter'],
+    package_data = {'': ['templates/django_twitter/*.html','templates/admin/django_twitter/twitteraccount/*.html']},
     license = 'The MIT License',
     keywords = 'twitter django oauth api',
 )
 
 SETUPTOOLS_METADATA = dict(
-    install_requires = ['setuptools', 'twitter'],
+    install_requires = ['setuptools', 'python-twitter'],
     include_package_data = True,
 )
 
