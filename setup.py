@@ -1,3 +1,5 @@
+from setuptools import find_packages
+
 __author__ = 'jack.hsu@gmail.com'
 __version__ = '0.2'
 
@@ -8,10 +10,10 @@ METADATA = dict(
     description ='Manages Twitter accounts a for Django project',
     author = 'Jack Hsu',
     author_email = 'jack.hsu@gmail.com',
-    packages = ['django_twitter'],
-    package_data = {'': ['templates/django_twitter/*.html','templates/admin/django_twitter/twitteraccount/*.html']},
+    packages = find_packages(),
     license = 'The MIT License',
     keywords = 'twitter django oauth api',
+    zip_safe = False,
 )
 
 SETUPTOOLS_METADATA = dict(

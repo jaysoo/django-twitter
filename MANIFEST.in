@@ -1,0 +1,2 @@
+include README.md LICENSE
+recursive-include django_twitter *.py *.html
