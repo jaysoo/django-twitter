@@ -1,21 +1,17 @@
-from setuptools import setup, find_packages
-
 __author__ = 'jack.hsu@gmail.com'
-__version__ = '0.1-devel'
+__version__ = '0.2-devel'
 
-setup(
+METADATA = dict(
     name = 'django-tweet',
-    version =__version__,
-    py_modules = ['django_tweet'],
+    version = __version__,
     url = 'http://github.com/jaysoo/django-tweet',
-    license = 'MIT',
     description ='Manages twitter accounts a for Django project',
-    author='Jack Hsu',
-    author_email='jack.hsu@gmail.com'
-    packages = find_packages('django_tweet'),
-    package_dir = {'': 'django_tweet'},
-    license='The MIT License',
-    keywords='twitter django oauth api',
+    author = 'Jack Hsu',
+    author_email = 'jack.hsu@gmail.com',
+    packages = ['django_tweet'],
+    package_data = {'': ['templates/django_tweet/*.html','templates/admin/django_tweet/twitteraccount/*.html']},
+    license = 'The MIT License',
+    keywords = 'twitter django oauth api',
 )
 
 SETUPTOOLS_METADATA = dict(
@@ -41,7 +37,6 @@ def Main():
     except ImportError:
         import distutils.core
         distutils.core.setup(**METADATA)
-
 
 if __name__ == '__main__':
     Main()
