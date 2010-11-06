@@ -17,7 +17,7 @@ METADATA = dict(
 )
 
 SETUPTOOLS_METADATA = dict(
-    install_requires = ['setuptools', 'python-twitter'],
+    install_requires = ['setuptools', 'python-twitter', 'django'],
     include_package_data = True,
 )
 
