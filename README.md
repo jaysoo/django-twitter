@@ -39,6 +39,18 @@ You also need to add django_twitter to project.
 And don't forget to syncdb! ;)
 
 
+Add to urls.py
+--------------
+
+Add an entry for django-twitter to your project's `urls.py`.
+
+    urlpatterns = patterns('',
+        ...
+        (r'^django_twitter/', include('django_twitter.urls')),
+        ...
+    )
+
+
 That's it!
 ----------
 
