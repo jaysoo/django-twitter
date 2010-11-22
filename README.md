@@ -7,6 +7,11 @@ Dependencies
 ------------
 
 This Django app uses the [python-twitter](http://code.google.com/p/python-twitter/) library. Make sure you install at least version 0.8.
+Not user easy_install for python-twitter module beacuse isn't at 0.8 version, but you must clone main repository by http://code.google.com/p/python-twitter/source/checkout.
+
+Clone main repository:
+
+hg clone https://python-twitter.googlecode.com/hg/ python-twitter
 
 You will also need oauth2 and django (obviously). Both can be installed using  easy_install or pip.
 
@@ -18,6 +23,9 @@ If you don't have an app registered with Twitter yet, you'll need to do so befor
 
 See: [http://dev.twitter.com/apps](http://dev.twitter.com/apps)
 
+Note during registration Twitter-app:
+- Select "Browser" into "Application Type" and put correct url into "Callback URL" (es. http://someip/authorize/)
+- Select correct main url/ip or location into "Sites" of Django Administration dashboard
 
 Project Settings
 ----------------
