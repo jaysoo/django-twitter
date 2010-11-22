@@ -8,7 +8,7 @@ Dependencies
 
 This Django app uses the [python-twitter](http://code.google.com/p/python-twitter/) library. Make sure you install at least version 0.8.
 
-Not user easy_install for python-twitter module because isn't at 0.8 version, but you must clone main repository by http://code.google.com/p/python-twitter/source/checkout.
+Not use easy_install for python-twitter module because isn't at 0.8 version, but you must clone main repository by http://code.google.com/p/python-twitter/source/checkout.
 
 Clone main repository:
 
